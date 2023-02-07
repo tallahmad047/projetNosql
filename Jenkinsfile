@@ -14,7 +14,7 @@ pipeline {
             steps {
                 // Build steps for your application
 
-                bat 'mvn package'
+                sh 'mvn package'
             }
         }
         
