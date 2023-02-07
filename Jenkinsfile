@@ -7,7 +7,7 @@ pipeline {
     stages {
         stage("source"){
               steps{
-                 git branch: 'master' ,url:'https://github.com/tallahmad047/jenkinswebap.git'
+                 git branch: 'master' ,url:'https://github.com/tallahmad047/projetNosql.git'
                  }
             }
         stage('Build') {
