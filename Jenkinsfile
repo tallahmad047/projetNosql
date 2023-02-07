@@ -17,6 +17,11 @@ pipeline {
                 sh 'mvn package'
             }
         }
+        stage('Deploy') {
+                steps {
+                        ansiblePlaybook(colorized: true, playbook: 'deploy.yml',inventory: 'host.yml')
+                  }
+                }
         
 
 
