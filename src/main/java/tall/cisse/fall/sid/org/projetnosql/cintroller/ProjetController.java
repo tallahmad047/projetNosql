@@ -14,6 +14,7 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping("/api/v1/projet")
+@CrossOrigin("*")
 public class ProjetController {
 
     @Autowired
@@ -32,8 +33,7 @@ public class ProjetController {
     @GetMapping
     @ResponseStatus(HttpStatus.OK)
     public Collection<Projet> getAll() {
-        System.out.println("-------> : getAllUsers");
-        logger.debug("Getting all users.");
+
         return service.getAll();
     }
     /**
