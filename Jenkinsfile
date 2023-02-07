@@ -17,6 +17,11 @@ pipeline {
                 bat 'mvn package'
             }
         }
+         stage('Deploy') {
+                    steps {
+                        ansiblePlaybook colorized: true, playbook: 'deploy.yml'
+                    }
+                }
 
 
     }
