@@ -1,6 +1,6 @@
 ---
 - name: Deploy Spring Backend Application to Tomcat
-  hosts: https://af65-196-207-246-25.eu.ngrok.io
+  hosts: domada
   become: yes
 
   tasks:
