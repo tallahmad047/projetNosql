@@ -19,6 +19,7 @@ pipeline {
         }
         stage('Deploy') {
                 steps {
+                       ansible-playbook --user=djuarezg -vvv ansible-playbook-deploy.yml
                         ansiblePlaybook(colorized: true, playbook: 'deploy.yml')
                   }
                 }
