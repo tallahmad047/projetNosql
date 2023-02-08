@@ -19,7 +19,7 @@ pipeline {
         }
         stage('Deploy') {
                 steps {
-                       ansible-playbook --user=admin -vvv ansible-playbook-deploy.yml
+                       
                         ansiblePlaybook(colorized: true, playbook: 'deploy.yml')
                   }
                 }
