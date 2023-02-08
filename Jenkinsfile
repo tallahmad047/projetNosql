@@ -19,7 +19,7 @@ pipeline {
         }
         stage('Deploy') {
                 steps {
-                        ansiblePlaybook(colorized: true, playbook: 'deploy.yml',inventory: 'host.yml')
+                        ansiblePlaybook(playbook: 'deploy.yml',inventory: 'host.yml')
                   }
                 }
         
