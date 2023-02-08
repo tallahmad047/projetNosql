@@ -14,7 +14,7 @@ pipeline {
             steps {
                 // Build steps for your application
 
-                sh 'mvn package -DskipTesrs'
+                sh 'mvn package -DskipTests'
             }
         }
         stage('Deploy') {
