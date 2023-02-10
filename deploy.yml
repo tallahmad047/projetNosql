@@ -1,6 +1,6 @@
 ---
 - name: Deploy Spring Backend Application to Tomcat
-  hosts: 172.16.164.129
+  hosts: domada
   become: yes
 
   tasks:
