@@ -20,7 +20,7 @@ pipeline {
         stage('Deploy') {
                 steps {
                        
-                        ansiblePlaybook(colorized: true, ansible-playbook: 'deploy.yml' -u tall)
+                        ansiblePlaybook(colorized: true, playbook: 'deploy.yml' -u tall)
                   }
                 }
         
