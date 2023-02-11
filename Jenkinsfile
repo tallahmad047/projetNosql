@@ -19,8 +19,8 @@ pipeline {
         }
         stage('Deploy') {
                 steps {
-                       
-                         ansiblePlaybook(colorized: true, playbook: 'deploy.yml', extraVars: ['-u', 'nambe', '-i', 'host.yml'])
+                        ansiblePlaybook colorized: true, playbook: 'deploy.yml', extraVars: ['-u': 'nambe', '-i': 'host.yml']
+                         //ansiblePlaybook(colorized: true, playbook: 'deploy.yml', extraVars: ['-u', 'nambe', '-i', 'host.yml'])
                     // ansible-playbook -i host.yml  deploy.yml -u nambe -k -e 'ansible_python_interpreter=/usr/bin/python3'
 
                   }
